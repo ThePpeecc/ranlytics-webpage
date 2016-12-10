@@ -1,0 +1,14 @@
+{
+  "name": "ranlytics",
+  "version": "0.0.2",
+  "description": "Ranalytics Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marcus A Hansen",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
