@@ -66,6 +66,17 @@ gulp.task('clean', function() {
     return del('dist');
 })
 
+
+gulp.task('pub-clean', function() {
+    return del('docs');
+})
+
+
+gulp.task('publish', ['pub-clean', 'f-build'], function() {
+  return gulp.src('dist/**/*')
+        .pipe(gulp.dest('docs'))
+})
+
 gulp.task('default', function() {
 
 })
