@@ -1,3 +1,8 @@
+html, body {
+  width: auto;
+  overflow-x: hidden;
+}
+
 .bg-ran {
   background-color: #005386;
 }
@@ -46,7 +51,6 @@
   margin: 0 0 0 1rem !important;
 }
 
-
 .logo-top {
   max-height: 100px;
 }
@@ -90,7 +94,7 @@
 }
 
 
-
+/*Social icons starts*/
 .icon-circle .fa{
     font-size           : 25px;
     color               : #e84700;
@@ -224,3 +228,4 @@
     border                  : 1px solid #007bb7;
 
 }
+/*Social icons ends*/
