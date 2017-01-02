@@ -11,10 +11,10 @@ html, body {
   background-color: #005386;
 }
 
-.main {
-  margin: 2rem 0 0 0;
-  padding: 1rem 0;
-  box-shadow: 0px 5px 13px -10px #373A3C;
+.bottomShadow {
+  width: 100%;
+  height: 10px;
+  box-shadow: 0 5px 4px -4px #9ca4aa;
 }
 
 .footerDiv {
@@ -92,6 +92,13 @@ html, body {
 .jumbotron {
   color: white;
 }
+
+
+.infoCard {
+  min-height: 450px;
+}
+
+
 
 
 /*Social icons starts*/
