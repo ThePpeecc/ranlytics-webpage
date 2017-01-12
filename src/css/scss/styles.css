@@ -67,6 +67,9 @@ html {
   .dropDown:hover .dropdown-menu {
     display: block; } }
 
+.ancor {
+  padding-top: 80px; }
+
 .text-center {
   text-align: center; }
 
