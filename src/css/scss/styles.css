@@ -1,8 +1,10 @@
-html, body {
+body,
+html {
   width: auto;
   overflow-x: hidden; }
 
-.bg-ran, .btn-primary {
+.bg-ran,
+.btn-primary {
   background-color: #005386; }
 
 .bottomShadow {
@@ -11,8 +13,8 @@ html, body {
   box-shadow: 0 5px 4px -4px #9ca4aa; }
 
 .footerDiv {
-  margin: 2rem 0 0 0;
-  padding: 0 0 1rem 0; }
+  margin: 2rem 0 0;
+  padding: 0 0 1rem; }
 
 .longList {
   margin: 2rem 0; }
@@ -43,11 +45,9 @@ html, body {
 .logo-moved {
   max-height: 50px; }
 
-.unscrolled .navbar-brand .logo-moved, .scrolled .navbar-brand .logo-top {
+.scrolled .navbar-brand .logo-top,
+.unscrolled .navbar-brand .logo-moved {
   display: none; }
-
-.text-center {
-  text-align: center; }
 
 .navbar {
   -webkit-transition: all 0.6s ease-out;
@@ -58,6 +58,17 @@ html, body {
 
 .navbar.scrolled {
   background: #010101; }
+
+.dropDown .dropdown-menu {
+  top: 40px;
+  left: initial; }
+
+@media (min-width: 768px) {
+  .dropDown:hover .dropdown-menu {
+    display: block; } }
+
+.text-center {
+  text-align: center; }
 
 .jumbotron {
   color: white; }
@@ -72,7 +83,7 @@ html, body {
   min-height: 350px; }
 
 .partners {
-  padding: 5rem 0 0 0;
+  padding: 5rem 0 0;
   min-height: 500px; }
   .partners a {
     font-size: 1.5rem;
@@ -90,20 +101,20 @@ html, body {
   border: 2px solid #e84700;
   line-height: 80px;
   cursor: pointer;
-  -webkit-transition: all  ease-in-out 0.35s;
-  -moz-transition: all  ease-in-out 0.35s;
-  -o-transition: all  ease-in-out 0.35s;
-  -ms-transition: all  ease-in-out 0.35s;
-  transition: all  ease-in-out 0.20s,background-color ease-in-out 0.05s; }
+  -webkit-transition: all ease-in-out 0.35s;
+  -moz-transition: all ease-in-out 0.35s;
+  -o-transition: all ease-in-out 0.35s;
+  -ms-transition: all ease-in-out 0.35s;
+  transition: all ease-in-out 0.20s,background-color ease-in-out 0.05s; }
   .icon-circle .fa:hover {
     background-color: #e84700;
     color: #fff;
     border: 1px solid #e84711;
-    -moz-box-shadow: inset 0px 0px 0px 5px #ffffff;
-    -o-box-shadow: inset 0px 0px 0px 5px #ffffff;
-    -ms-box-shadow: inset 0px 0px 0px 5px #ffffff;
-    -webkit-box-shadow: inset 0px 0px 0px 5px #ffffff;
-    box-shadow: inset 0px 0px 0px 5px #ffffff;
+    -moz-box-shadow: inset 0 0 0 5px #ffffff;
+    -o-box-shadow: inset 0 0 0 5px #ffffff;
+    -ms-box-shadow: inset 0 0 0 5px #ffffff;
+    -webkit-box-shadow: inset 0 0 0 5px #ffffff;
+    box-shadow: inset 0 0 0 5px #ffffff;
     -ms-transform: scale(1.2, 1.2);
     -webkit-transform: scale(1.2, 1.2);
     -moz-transform: scale(1.2, 1.2);
@@ -111,7 +122,7 @@ html, body {
     transform: scale(1.2, 1.2); }
 
 .icon-circle i:before {
-  margin-left: 0px;
+  margin-left: 0;
   font-size: 40px; }
 
 @media (min-width: 320px) and (max-width: 768px) {
@@ -125,27 +136,27 @@ html, body {
     border: 2px solid #e84700;
     line-height: 40px;
     cursor: pointer;
-    -webkit-transition: all  ease-in-out 0.35s;
-    -moz-transition: all  ease-in-out 0.35s;
-    -o-transition: all  ease-in-out 0.35s;
-    -ms-transition: all  ease-in-out 0.35s;
-    transition: all  ease-in-out 0.20s,background-color ease-in-out 0.05s; }
+    -webkit-transition: all ease-in-out 0.35s;
+    -moz-transition: all ease-in-out 0.35s;
+    -o-transition: all ease-in-out 0.35s;
+    -ms-transition: all ease-in-out 0.35s;
+    transition: all ease-in-out 0.20s,background-color ease-in-out 0.05s; }
     .icon-circle .fa:hover {
       background-color: #e84700;
       color: #fff;
       border: 1px solid #e84711;
-      -moz-box-shadow: inset 0px 0px 0px 5px #ffffff;
-      -o-box-shadow: inset 0px 0px 0px 5px #ffffff;
-      -ms-box-shadow: inset 0px 0px 0px 5px #ffffff;
-      -webkit-box-shadow: inset 0px 0px 0px 5px #ffffff;
-      box-shadow: inset 0px 0px 0px 5px #ffffff;
+      -moz-box-shadow: inset 0 0 0 5px #ffffff;
+      -o-box-shadow: inset 0 0 0 5px #ffffff;
+      -ms-box-shadow: inset 0 0 0 5px #ffffff;
+      -webkit-box-shadow: inset 0 0 0 5px #ffffff;
+      box-shadow: inset 0 0 0 5px #ffffff;
       -ms-transform: scale(1.2, 1.2);
       -webkit-transform: scale(1.2, 1.2);
       -moz-transform: scale(1.2, 1.2);
       -o-transform: scale(1.2, 1.2);
       transform: scale(1.2, 1.2); }
   .icon-circle i:before {
-    margin-left: 0px;
+    margin-left: 0;
     font-size: 20px; } }
 
 .ifacebook .fa {

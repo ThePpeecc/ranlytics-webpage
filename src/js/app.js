@@ -25,7 +25,7 @@
     particlesJS('particles-js', {
         "particles": {
             "number": {
-                "value": 40,
+                "value": 25,
                 "density": {
                     "enable": true,
                     "value_area": 641.362896154328
@@ -78,7 +78,7 @@
             },
             "move": {
                 "enable": true,
-                "speed": 0.5,
+                "speed": 0.25,
                 "direction": "none",
                 "random": false,
                 "straight": false,
