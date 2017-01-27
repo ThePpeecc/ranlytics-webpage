@@ -7,8 +7,6 @@
         <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-        <!-- Fonts -->
-        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans+Narrow" />
 
         <title>RANlytics | Home</title>
         <!-- css -->
@@ -24,7 +22,7 @@
                     <!-- <a href="#" class="navbar-brand mr-3">RANlytics</a> -->
                     <button class="navbar-toggler hidden-md-up float-xs-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
 
-                    <div class="collapse navbar-toggleable-sm " id="navbarResponsive">
+                    <div class="collapse navbar-toggleable-sm row" id="navbarResponsive">
                         <ul class="nav navbar-nav navbar-left float-xs-right float-md-left">
                             <!-- Links -->
                             <li class="nav-item active">
@@ -36,10 +34,10 @@
                                 <p>•</p>
                             </li>
                             <li class="nav-item dropDown">
-                                <a class="nav-link dropdown-toggle" href="./solutions.html">
+                                <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#solutionsDrop" aria-expanded="false" aria-controls="solutionsDrop">
                                   Solutions
                                 </a>
-                                <div class="dropdown-menu">
+                                <div class="collapse" id="solutionsDrop">
                                     <a class="dropdown-item" href="./solutions.html#driveTesting">Drive Testing</a>
                                     <a class="dropdown-item" href="./solutions.html#walkTesting">Walk Testing</a>
                                     <a class="dropdown-item" href="./solutions.html#RFMonitoring">RF Monitoring</a>
@@ -50,10 +48,10 @@
                                 <p>•</p>
                             </li>
                             <li class="nav-item dropDown">
-                              <a class="nav-link dropdown-toggle" href="./cases.html">
+                              <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#caseDrop" aria-expanded="false" aria-controls="caseDrop">
                                 Use cases
                               </a>
-                              <div class="dropdown-menu">
+                              <div class="collapse" id="caseDrop">
                                   <a class="dropdown-item" href="./cases.html#RFTesting">Cell RF Testing</a>
                                   <a class="dropdown-item" href="./cases.html#walkTesting">Walk Testing</a>
                                   <a class="dropdown-item" href="./cases.html#walkTesting">DAS Service Assurance</a>
@@ -64,17 +62,9 @@
                                 <p>•</p>
                             </li>
                             <li class="nav-item dropDown">
-                              <a class="nav-link dropdown-toggle" href="./partners.html">
+                              <a class="nav-link" href="./partners.html">
                                 Partners
                               </a>
-                              <div class="dropdown-menu">
-                                  <a class="dropdown-item" href="./partners.html#africa">Africa and the Middle East</a>
-                                  <a class="dropdown-item" href="./partners.html#americas">Americas</a>
-                                  <a class="dropdown-item" href="./partners.html#asia">Asia</a>
-                                  <a class="dropdown-item" href="./partners.html#oceania">Australasia & Oceania</a>
-                                  <a class="dropdown-item" href="./partners.html#europe">Europe</a>
-                                  <a class="dropdown-item" href="./partners.html#scandinavia">Scandinavia</a>
-                              </div>
                             </li>
                             <li class="nav-item nav-link hidden-md-down spacer">
                                 <p>•</p>
@@ -112,6 +102,7 @@
                 </div>
             </nav>
         </header>
+
         <!-- Header Ends -->
 
         <!-- Jumbotron -->
@@ -121,12 +112,6 @@
                 <div class="hidden-sm-up py-3"></div>
                 <p class="lead text-xs-center">Cellular radio frequency testing, data collection and analysis. Redefined.</p>
                 <hr class="my-2">
-                <div class="col-md-8 offset-md-2">
-                    <p class="lead">
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                    </p>
-                </div>
-
             </div>
             <div id="particles-js" class="hidden-sm-down"></div>
         </div>
@@ -147,20 +132,18 @@
             <hr class="my-3">
 
             <div class="row mb-3">
-                <div class="offset-md-1 col-md-10 col-sm-12 text-center">
+                <div class="offset-md-1 col-md-10 col-sm-12 text-center mb-1">
                     <h2>Legacy RF testing tools no longer meet operators’ needs</h2>
                 </div>
+
                 <div class="offset-md-1 col-md-10 col-sm-12">
-                  <ul>
-                    <li><p>For too long, the many issues imposed by expensive legacy RF test tools have constrained your ability to test as extensively and frequently as you need, and to maximise the business value you can extract from your test data.
-                    </p></li>
-                    <li><p>RANlytics has spent 6 years re-thinking every aspect of indoor and outdoor RF testing and test data use, and developing an integrated portfolio of solutions that addresses each and every one of the issues you face in using legacy tools, and eliminates all of the constraints they impose on you.
-                    </p></li>
-                    <li><p>Our radically new approach combines our own purpose-designed and built test hardware with highly innovative cloud-based post-processing, data visualisation, reporting and analysis tools to give your entire business actionable insight into RF performance and benchmark test data.
-                    </p></li>
-                    <li><p> We eliminate scaling problems so that you can now test as extensively and frequently as you like.  Just in time for small cell and 5G deployments.
-                    </p></li>
-                  </ul>
+                  <p>For too long, the many issues imposed by expensive legacy RF test tools have constrained your ability to test as extensively and frequently as you need, and to maximise the business value you can extract from your test data.
+                  </p>
+                  <p>RANlytics has spent 6 years re-thinking every aspect of indoor and outdoor RF testing and test data use, and developing an integrated portfolio of solutions that addresses each and every one of the issues you face in using legacy tools, and eliminates all of the constraints they impose on you.
+                  </p>
+                  <p>Our radically new approach combines our own purpose-designed and built test hardware with highly innovative cloud-based post-processing, data visualisation, reporting and analysis tools to give your entire business actionable insight into RF performance and benchmark test data.
+                  </p>
+                  <p>We eliminate scaling problems so that you can now test as extensively and frequently as you like. Just in time for small cell and 5G deployments.</p>
                   <hr>
                   <p class="lead">All at a much lower cost that eliminates your CAPEX and lowers your OPEX through our unique subscription-based service model</p>
                 </div>
@@ -178,47 +161,6 @@
         <!-- Footer -->
         <footer>
             <div class="container">
-                <!-- Social -->
-                <div class="row footerDiv text-center">
-                    <h3>Join Us</h3>
-                    <div class="sicon offset-lg-3 offset-sm-2">
-                        <div class="col-lg-1 col-sm-2 col-xs-3 offset-xs-1 text-center">
-                            <div class="icon-circle">
-                                <a href="#" class="ifacebook" title="Facebook">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-1 col-sm-2 col-xs-3 offset-xs-1 text-center">
-                            <div class="icon-circle">
-                                <a href="#" class="itwittter" title="Twitter">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- <div class="col-lg-1 col-sm-2 col-xs-3 text-center">
-                            <div class="icon-circle">
-                                <a href="#" class="igoogle" title="Google+">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                            </div>
-                        </div> -->
-
-                        <div class="col-lg-1 col-sm-2 col-xs-3 offset-xs-1 text-center">
-                            <div class="icon-circle">
-                                <a href="https://www.linkedin.com/company/ranlytics" class="iLinkedin" title="Linkedin">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <hr class="my-2">
-                <!-- Social Ends -->
-
                 <!-- News section -->
                 <!-- <div class="row footerDiv text-center">
                     <h3>News & Events</h3>
