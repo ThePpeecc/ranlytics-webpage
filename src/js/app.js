@@ -5,7 +5,7 @@
     function checkScroll() {
         var startY = $('.navbar').height()/2; //The point where the navbar changes in px
 
-        if ($(window).scrollTop() > startY) {
+        if ($(window).scrollTop() > startY || $(window).width() <= 768) {
             $('.navbar').addClass("scrolled");
             $('.navbar').removeClass("unscrolled");
         } else {

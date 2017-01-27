@@ -6,6 +6,30 @@ body,
 html {
     width: auto;
     overflow-x: hidden;
+    p {
+	     font-family: 'PT Sans Narrow';
+	     font-size: 1.2rem;
+	     font-style: normal;
+	     font-variant: normal;
+	     font-weight: 400;
+	     line-height: 2rem;
+     }
+     h1, h2 {
+    	font-family: 'PT Sans Narrow';
+    	font-size: 2.5rem;
+    	font-style: normal;
+    	font-variant: normal;
+    	font-weight: 500;
+    	line-height: 2rem;
+    }
+    h3 {
+    	font-family: 'PT Sans Narrow';
+    	font-size: 1.6rem;
+    	font-style: normal;
+    	font-variant: normal;
+    	font-weight: 500;
+    	line-height: 2rem;
+    }
 }
 
 .bg-ran,
@@ -67,7 +91,11 @@ html {
 }
 
 .navbar {
-    font-family: "Montserrat", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    font-family: 'PT Sans Narrow';
+    font-style: normal;
+	  font-variant: normal;
+	  font-weight: 500;
+    font-size: 1.3rem;
     -webkit-transition: all 0.6s ease-out;
     -moz-transition: all 0.6s ease-out;
     -o-transition: all 0.6s ease-out;
@@ -75,7 +103,9 @@ html {
     transition: all 0.6s ease-out;
 }
 
-.unscrolled {}
+.unscrolled {
+
+}
 
 .navbar.scrolled {
     background: #010101;
@@ -98,8 +128,12 @@ html {
 
 .ancor {
   padding-top: 80px;
+  @media(max-width: 768px) {
+    padding-top: 5px;
+  }
 }
 //Menu Ends
+
 .text-center {
     text-align: center;
 }
@@ -116,6 +150,7 @@ html {
 .solution {
     img {
         max-height: 300px;
+        max-width: 400px;
     }
 }
 //Cases
@@ -134,7 +169,12 @@ html {
 
         &:hover {}
     }
+    .important {
+      p {display:inline}
+    }
 }
+
+
 /*Social icons starts*/
 .icon-circle {
     .fa {

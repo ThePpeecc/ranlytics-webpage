@@ -2,6 +2,31 @@ body,
 html {
   width: auto;
   overflow-x: hidden; }
+  body p,
+  html p {
+    font-family: 'PT Sans Narrow';
+    font-size: 1.2rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 2rem; }
+  body h1, body h2,
+  html h1,
+  html h2 {
+    font-family: 'PT Sans Narrow';
+    font-size: 2.5rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 2rem; }
+  body h3,
+  html h3 {
+    font-family: 'PT Sans Narrow';
+    font-size: 1.6rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 2rem; }
 
 .bg-ran,
 .btn-primary {
@@ -50,7 +75,11 @@ html {
   display: none; }
 
 .navbar {
-  font-family: "Montserrat", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-family: 'PT Sans Narrow';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  font-size: 1.3rem;
   -webkit-transition: all 0.6s ease-out;
   -moz-transition: all 0.6s ease-out;
   -o-transition: all 0.6s ease-out;
@@ -70,6 +99,9 @@ html {
 
 .ancor {
   padding-top: 80px; }
+  @media (max-width: 768px) {
+    .ancor {
+      padding-top: 5px; } }
 
 .text-center {
   text-align: center; }
@@ -81,7 +113,8 @@ html {
   min-height: 450px; }
 
 .solution img {
-  max-height: 300px; }
+  max-height: 300px;
+  max-width: 400px; }
 
 .minH {
   min-height: 350px; }
@@ -93,6 +126,8 @@ html {
     font-size: 1.5rem;
     color: white;
     margin: 0 1rem; }
+  .partners .important p {
+    display: inline; }
 
 /*Social icons starts*/
 .icon-circle .fa {
