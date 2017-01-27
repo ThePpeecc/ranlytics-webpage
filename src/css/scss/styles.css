@@ -10,19 +10,28 @@ html {
     font-variant: normal;
     font-weight: 400;
     line-height: 2rem; }
-  body h1, body h2,
+  body h4,
+  html h4 {
+    font-family: 'PT Sans Narrow';
+    font-size: 1.3rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 200;
+    line-height: 2rem; }
+  body h1,
+  body h2,
   html h1,
   html h2 {
     font-family: 'PT Sans Narrow';
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     font-style: normal;
     font-variant: normal;
     font-weight: 500;
-    line-height: 2rem; }
+    line-height: 3rem; }
   body h3,
   html h3 {
     font-family: 'PT Sans Narrow';
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-style: normal;
     font-variant: normal;
     font-weight: 500;
@@ -92,21 +101,23 @@ html {
 @media (max-width: 768px) {
   .navbar-nav {
     position: absolute;
-    left: 0px;
-    right: 0px;
+    left: 0;
+    right: 0;
     text-align: center;
     background: #010101; } }
 
 .collapse.in .navbar-nav {
   top: 66px; }
 
-.dropDown .collapse, .dropDown .collapsing {
+.dropDown .collapse,
+.dropDown .collapsing {
   position: absolute;
   background: white;
   border: 0.5px solid #010101;
   border-radius: 5px; }
   @media (max-width: 768px) {
-    .dropDown .collapse, .dropDown .collapsing {
+    .dropDown .collapse,
+    .dropDown .collapsing {
       position: relative; } }
 
 .ancor {
@@ -123,6 +134,30 @@ html {
 
 .infoCard {
   min-height: 450px; }
+
+.text-wrapper .read-more-state {
+  display: none; }
+
+.text-wrapper .read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .4s ease; }
+  .text-wrapper .read-more-target br {
+    display: none; }
+
+.text-wrapper .read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em; }
+  .text-wrapper .read-more-state:checked ~ .read-more-wrap .read-more-target br {
+    display: block; }
+
+.text-wrapper .read-more-state ~ .read-more-trigger:before {
+  content: 'Show more'; }
+
+.text-wrapper .read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less'; }
 
 .solution img {
   max-height: 300px;

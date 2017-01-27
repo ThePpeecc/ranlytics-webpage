@@ -1,36 +1,49 @@
 //Colors
 $blue: #005386;
-$orange: #f58634;
-//Front page
+$orange: #f58634; //Front page
+
 body,
 html {
     width: auto;
     overflow-x: hidden;
+
     p {
-	     font-family: 'PT Sans Narrow';
-	     font-size: 1.2rem;
-	     font-style: normal;
-	     font-variant: normal;
-	     font-weight: 400;
-	     line-height: 2rem;
-     }
-     h1, h2 {
-    	font-family: 'PT Sans Narrow';
-    	font-size: 2.5rem;
-    	font-style: normal;
-    	font-variant: normal;
-    	font-weight: 500;
-    	line-height: 2rem;
+        font-family: 'PT Sans Narrow';
+        font-size: 1.2rem;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 400;
+        line-height: 2rem;
     }
+    h4 {
+        font-family: 'PT Sans Narrow';
+        font-size: 1.3rem;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 200;
+        line-height: 2rem;
+    }
+
+    h1,
+    h2 {
+        font-family: 'PT Sans Narrow';
+        font-size: 2.4rem;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 500;
+        line-height: 3rem;
+    }
+
     h3 {
-    	font-family: 'PT Sans Narrow';
-    	font-size: 1.6rem;
-    	font-style: normal;
-    	font-variant: normal;
-    	font-weight: 500;
-    	line-height: 2rem;
+        font-family: 'PT Sans Narrow';
+        font-size: 1.8rem;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 500;
+        line-height: 2rem;
     }
 }
+
 
 .bg-ran,
 .btn-primary {
@@ -72,6 +85,7 @@ html {
     top: 0;
 }
 //Menu
+
 .spacer {
     color: white !important;
     margin: 0 0 0 1rem !important;
@@ -93,8 +107,8 @@ html {
 .navbar {
     font-family: 'PT Sans Narrow';
     font-style: normal;
-	  font-variant: normal;
-	  font-weight: 500;
+    font-variant: normal;
+    font-weight: 500;
     font-size: 1.3rem;
     -webkit-transition: all 0.6s ease-out;
     -moz-transition: all 0.6s ease-out;
@@ -103,47 +117,46 @@ html {
     transition: all 0.6s ease-out;
 }
 
-.unscrolled {
-
-}
+.unscrolled {}
 
 .navbar.scrolled {
     background: #010101;
 }
 
 .navbar-nav {
-  @media(max-width: 768px) {
-   position: absolute;
-   left: 0px;
-   right: 0px;
-   text-align: center;
-   background: #010101;
-  }
+    @media(max-width: 768px) {
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background: #010101;
+    }
 }
 
 .collapse.in {
-  .navbar-nav {
-    top: 66px;
-  }
+    .navbar-nav {
+        top: 66px;
+    }
 }
 
 .dropDown {
-    .collapse, .collapsing {
+    .collapse,
+    .collapsing {
         position: absolute;
         background: white;
         border: 0.5px solid #010101;
         border-radius: 5px;
         @media(max-width: 768px) {
-          position: relative;
+            position: relative;
         }
     }
 }
 
 .ancor {
-  padding-top: 80px;
-  @media(max-width: 768px) {
-    padding-top: 5px;
-  }
+    padding-top: 80px;
+    @media(max-width: 768px) {
+        padding-top: 5px;
+    }
 }
 //Menu Ends
 
@@ -160,6 +173,40 @@ html {
 }
 //Front-page ends
 //Solutions
+
+.text-wrapper {
+    .read-more-state {
+        display: none;
+    }
+
+    .read-more-target {
+        opacity: 0;
+        max-height: 0;
+        font-size: 0;
+        transition: .4s ease;
+        br {
+          display: none;
+        }
+    }
+
+    .read-more-state:checked ~ .read-more-wrap .read-more-target {
+        opacity: 1;
+        font-size: inherit;
+        max-height: 999em;
+        br {
+          display: block;
+        }
+    }
+
+    .read-more-state ~ .read-more-trigger:before {
+        content: 'Show more';
+    }
+
+    .read-more-state:checked ~ .read-more-trigger:before {
+        content: 'Show less';
+    }
+}
+
 .solution {
     img {
         max-height: 300px;
@@ -167,10 +214,12 @@ html {
     }
 }
 //Cases
+
 .minH {
     min-height: 350px;
 }
 //Partners
+
 .partners {
     padding: 5rem 0 0;
     min-height: 500px;
@@ -182,7 +231,10 @@ html {
 
         &:hover {}
     }
+
     .important {
-      p {display:inline}
+        p {
+            display: inline;
+        }
     }
 }

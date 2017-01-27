@@ -15,104 +15,99 @@
         <link href="css/all.min.css" rel="stylesheet">
     </head>
     <body>
-        <!-- Header -->
-        <header>
-            <nav class="navbar navbar-dark navbar-fixed-top scrolled">
-                <div class="container-fluid px-3">
-                    <a href="./index.html" class="navbar-brand mr-3 "><img src="./img/logo.png" class="logo-top" alt="brand"><img src="./img/logoMin.png" class="logo-moved" alt="brand">
-                    </a>
-                    <!-- <a href="#" class="navbar-brand mr-3">RANlytics</a> -->
-                    <button class="navbar-toggler hidden-md-up float-xs-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+      <!-- Header -->
+      <header>
+          <nav class="navbar navbar-dark navbar-fixed-top scrolled">
+              <div class="container-fluid px-3">
+                  <a href="./index.html" class="navbar-brand mr-3 "><img src="./img/logo.png" class="logo-top" alt="brand"><img src="./img/logoMin.png" class="logo-moved" alt="brand">
+                  </a>
+                  <!-- <a href="#" class="navbar-brand mr-3">RANlytics</a> -->
+                  <button class="navbar-toggler hidden-md-up float-xs-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
 
-                    <div class="collapse navbar-toggleable-sm " id="navbarResponsive">
-                        <ul class="nav navbar-nav navbar-left float-xs-right float-md-left">
-                            <!-- Links -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="./index.html">Home
-                                </a>
-                            </li>
-                            <li class="nav-item nav-link hidden-md-down spacer">
-                                <p>•</p>
-                            </li>
-                            <li class="nav-item dropDown ">
-                                <a class="nav-link dropdown-toggle" href="./solutions.html">
-                                  Solutions
-                                </a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="./solutions.html#driveTesting">Drive Testing</a>
-                                    <a class="dropdown-item" href="./solutions.html#walkTesting">Walk Testing</a>
-                                    <a class="dropdown-item" href="./solutions.html#RFMonitoring">RF Monitoring</a>
-                                    <a class="dropdown-item" href="./solutions.html#antennaMonitoring">Antenna Monitoring</a>
-                                </div>
-                            </li>
-                            <li class="nav-item nav-link hidden-md-down spacer">
-                                <p>•</p>
-                            </li>
-                            <li class="nav-item dropDown">
-                              <a class="nav-link dropdown-toggle" href="./cases.html">
-                                Use cases
+                  <div class="collapse navbar-toggleable-sm row" id="navbarResponsive">
+                      <ul class="nav navbar-nav navbar-left float-xs-right float-md-left">
+                          <!-- Links -->
+                          <li class="nav-item">
+                              <a class="nav-link" href="./index.html">Home
+
                               </a>
-                              <div class="dropdown-menu">
-                                  <a class="dropdown-item" href="./cases.html#RFTesting">Cell RF Testing</a>
-                                  <a class="dropdown-item" href="./cases.html#walkTesting">Walk Testing</a>
-                                  <a class="dropdown-item" href="./cases.html#walkTesting">DAS Service Assurance</a>
-                                  <a class="dropdown-item" href="./cases.html#DASAntenna">Operation of Every DAS Antenna</a>
-                              </div>
-                            </li>
-                            <li class="nav-item nav-link hidden-md-down spacer">
-                                <p>•</p>
-                            </li>
-                            <li class="nav-item dropDown ">
-                              <a class="nav-link dropdown-toggle" href="./partners.html">
-                                Partners
+                          </li>
+                          <li class="nav-item nav-link hidden-md-down spacer">
+                              <p>•</p>
+                          </li>
+                          <li class="nav-item dropDown active">
+                              <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#solutionsDrop" aria-expanded="false" aria-controls="solutionsDrop">
+                                Solutions
+                                <span class="sr-only">(current)</span>
                               </a>
-                              <div class="dropdown-menu">
-                                  <a class="dropdown-item" href="./partners.html#africa">Africa and the Middle East</a>
-                                  <a class="dropdown-item" href="./partners.html#americas">Americas</a>
-                                  <a class="dropdown-item" href="./partners.html#asia">Asia</a>
-                                  <a class="dropdown-item" href="./partners.html#oceania">Australasia & Oceania</a>
-                                  <a class="dropdown-item" href="./partners.html#europe">Europe</a>
-                                  <a class="dropdown-item" href="./partners.html#scandinavia">Scandinavia</a>
+                              <div class="collapse" id="solutionsDrop">
+                                  <a class="dropdown-item" href="./drive.html">Drive Testing</a>
+                                  <a class="dropdown-item" href="./walk.html">Walk Testing</a>
+                                  <a class="dropdown-item" href="./rfMon.html">RF Monitoring</a>
+                                  <a class="dropdown-item" href="./antenna.html">Antenna Monitoring</a>
                               </div>
-                            </li>
-                            <li class="nav-item nav-link hidden-md-down spacer">
-                                <p>•</p>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="./about.html">About Us
-                                    <span class="sr-only">(current)</span></a>
-                            </li>
+                          </li>
+                          <li class="nav-item nav-link hidden-md-down spacer">
+                              <p>•</p>
+                          </li>
+                          <li class="nav-item dropDown">
+                            <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#caseDrop" aria-expanded="false" aria-controls="caseDrop">
+                              Use cases
+                            </a>
+                            <div class="collapse" id="caseDrop">
+                                <a class="dropdown-item" href="./cases.html#RFTesting">Cell RF Testing</a>
+                                <a class="dropdown-item" href="./cases.html#walkTesting">Walk Testing</a>
+                                <a class="dropdown-item" href="./cases.html#walkTesting">DAS Service Assurance</a>
+                                <a class="dropdown-item" href="./cases.html#DASAntenna">Operation of Every DAS Antenna</a>
+                            </div>
+                          </li>
+                          <li class="nav-item nav-link hidden-md-down spacer">
+                              <p>•</p>
+                          </li>
+                          <li class="nav-item dropDown">
+                            <a class="nav-link" href="./partners.html">
+                              Partners
+                            </a>
+                          </li>
+                          <li class="nav-item nav-link hidden-md-down spacer">
+                              <p>•</p>
+                          </li>
+                          <li class="nav-item ">
+                              <a class="nav-link" href="./about.html">About Us</a>
+                          </li>
 
-                            <!-- Links End -->
-                        </ul>
-                        <ul class="nav navbar-nav float-md-right hidden-sm-down">
-                            <!-- Links -->
+                          <!-- Links End -->
+                      </ul>
+                      <ul class="nav navbar-nav float-sm-right hidden-sm-down">
+                          <!-- Links -->
 
-                            <li class="nav-item">
-                                <a class="btn btn-outline-secondary" href="#">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                            </li>
+                          <li class="nav-item">
+                              <a class="btn btn-outline-secondary" href="#">
+                                  <i class="fa fa-facebook"></i>
+                              </a>
+                          </li>
 
-                            <li class="nav-item">
-                                <a class="btn btn-outline-secondary" href="#">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
+                          <li class="nav-item">
+                              <a class="btn btn-outline-secondary" href="#">
+                                  <i class="fa fa-twitter"></i>
+                              </a>
+                          </li>
 
-                            <li class="nav-item ">
-                                <a class="btn btn-outline-secondary" href="https://www.linkedin.com/company/ranlytics">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </li>
+                          <li class="nav-item ">
+                              <a class="btn btn-outline-secondary" href="https://www.linkedin.com/company/ranlytics">
+                                  <i class="fa fa-linkedin"></i>
+                              </a>
+                          </li>
 
-                            <!-- Links End -->
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <!-- Header Ends -->
+                          <!-- Links End -->
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+      </header>
+
+      <!-- Header Ends -->
+
 
         <!-- Jumbotron -->
         <div class="jumbotron jumbotron-fluid " style="background-image: url('img/world.png'); background-size: cover; ">

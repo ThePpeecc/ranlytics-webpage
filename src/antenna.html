@@ -7,10 +7,8 @@
         <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-        <!-- Fonts -->
-        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans+Narrow" />
 
-        <title>RANlytics | Home</title>
+        <title>RANlytics | RF Monitoring</title>
         <!-- css -->
         <link href="css/all.min.css" rel="stylesheet">
     </head>
@@ -22,40 +20,39 @@
                     <a href="./index.html" class="navbar-brand mr-3 "><img src="./img/logo.png" class="logo-top" alt="brand"><img src="./img/logoMin.png" class="logo-moved" alt="brand">
                     </a>
                     <!-- <a href="#" class="navbar-brand mr-3">RANlytics</a> -->
-
                     <button class="navbar-toggler hidden-md-up float-xs-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
 
-                    <div class="collapse navbar-toggleable-sm " id="navbarResponsive">
+                    <div class="collapse navbar-toggleable-sm row" id="navbarResponsive">
                         <ul class="nav navbar-nav navbar-left float-xs-right float-md-left">
                             <!-- Links -->
                             <li class="nav-item">
                                 <a class="nav-link" href="./index.html">Home
-                                    <span class="sr-only">(current)</span>
+
                                 </a>
                             </li>
                             <li class="nav-item nav-link hidden-md-down spacer">
                                 <p>•</p>
                             </li>
                             <li class="nav-item dropDown active">
-                                <a class="nav-link dropdown-toggle" href="./solutions.html">
+                                <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#solutionsDrop" aria-expanded="false" aria-controls="solutionsDrop">
                                   Solutions
-                                      <span class="sr-only">(current)</span>
+                                  <span class="sr-only">(current)</span>
                                 </a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="./solutions.html#driveTesting">Drive Testing</a>
-                                    <a class="dropdown-item" href="./solutions.html#walkTesting">Walk Testing</a>
-                                    <a class="dropdown-item" href="./solutions.html#RFMonitoring">RF Monitoring</a>
-                                    <a class="dropdown-item" href="./solutions.html#antennaMonitoring">Antenna Monitoring</a>
+                                <div class="collapse" id="solutionsDrop">
+                                    <a class="dropdown-item" href="./drive.html">Drive Testing</a>
+                                    <a class="dropdown-item" href="./walk.html">Walk Testing</a>
+                                    <a class="dropdown-item" href="./rfMon.html">RF Monitoring</a>
+                                    <a class="dropdown-item" href="./antenna.html">Antenna Monitoring</a>
                                 </div>
                             </li>
                             <li class="nav-item nav-link hidden-md-down spacer">
                                 <p>•</p>
                             </li>
                             <li class="nav-item dropDown">
-                              <a class="nav-link dropdown-toggle" href="./cases.html">
+                              <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#caseDrop" aria-expanded="false" aria-controls="caseDrop">
                                 Use cases
                               </a>
-                              <div class="dropdown-menu">
+                              <div class="collapse" id="caseDrop">
                                   <a class="dropdown-item" href="./cases.html#RFTesting">Cell RF Testing</a>
                                   <a class="dropdown-item" href="./cases.html#walkTesting">Walk Testing</a>
                                   <a class="dropdown-item" href="./cases.html#walkTesting">DAS Service Assurance</a>
@@ -66,17 +63,9 @@
                                 <p>•</p>
                             </li>
                             <li class="nav-item dropDown">
-                              <a class="nav-link dropdown-toggle" href="./partners.html">
+                              <a class="nav-link" href="./partners.html">
                                 Partners
                               </a>
-                              <div class="dropdown-menu">
-                                  <a class="dropdown-item" href="./partners.html#africa">Africa and the Middle East</a>
-                                  <a class="dropdown-item" href="./partners.html#americas">Americas</a>
-                                  <a class="dropdown-item" href="./partners.html#asia">Asia</a>
-                                  <a class="dropdown-item" href="./partners.html#oceania">Australasia & Oceania</a>
-                                  <a class="dropdown-item" href="./partners.html#europe">Europe</a>
-                                  <a class="dropdown-item" href="./partners.html#scandinavia">Scandinavia</a>
-                              </div>
                             </li>
                             <li class="nav-item nav-link hidden-md-down spacer">
                                 <p>•</p>
@@ -87,7 +76,7 @@
 
                             <!-- Links End -->
                         </ul>
-                        <ul class="nav navbar-nav float-md-right hidden-sm-down">
+                        <ul class="nav navbar-nav float-sm-right hidden-sm-down">
                             <!-- Links -->
 
                             <li class="nav-item">
@@ -114,15 +103,17 @@
                 </div>
             </nav>
         </header>
+
         <!-- Header Ends -->
 
+
         <!-- Jumbotron -->
-        <div class="jumbotron jumbotron-fluid pt-3 minH" style="background-image: url('img/intro-bg.jpg'); background-size: cover; ">
+        <div class="jumbotron jumbotron-fluid pt-3 px-1 minH" style="background-image: url('img/intro-bg.jpg'); background-size: cover; ">
             <div class="container inFront mt-3 pt-3">
               <div class="row">
-                  <h1 class="font-weight-normal">Our solutions</h1>
+                  <h2 class="font-weight-normal">RANlytics Cirrus and Cirrus-LT DAS Antenna Monitors</h2>
                   <div class="col-md-10 col-sm-12">
-                      <p class="lead">Our solution, Cerno, democratises that information so that both RF engineers and business users can easily find, query and use it</p>
+                      <h4 class="lead">Monitor passive and active DAS antennas – individually, continuously and in real-time</h4>
                   </div>
               </div>
             </div>
@@ -135,62 +126,108 @@
 
         <!-- Main Row -->
         <div class="container">
-            <div class="row solution ancor" id="driveTesting">
-              <div class="col-md-6">
-                <h1>Drive Testing</h1>
-                <p>Cerno by RANlytics provides your engineers & business users with the highest quality RF test data combined with a complete, integrated outdoor macro cell testing and analysis suite that complements our walk testing and static testing solutions.  And with the unique RANlytics service subscription model, there is no IT infrastructure required, no capital outlay, no annual maintenance fees and lower OPEX costs.
+          <div class="row solution">
+            <div class="col-md-6">
+              <h3>The Problems</h3>
+              <hr>
+              <p>Verifying that every antenna, coupler and cable in a DAS installation has been installed and configured correctly is difficult, time-consuming & expensive; and ensuring that all elements continue to operate to spec once installed has been impossible.
+              </p>
+              <p>Installers frequently have to revisit sites to rectify installation or equipment faults – incurring additional costs that compromise the financial viability of projects. Installation project managers rely exclusively on installers’ reports to know which elements have been installed successfully – reports that can’t be independently verified.
+              </p>
+              <p>Then, once commissioned, there is no means of assuring that DAS installations are operating correctly; and, when an issue occurs, operators or building owners can’t identify which antenna or coupler has failed without an expensive site visit.
+              </p>
+              <img class="img-fluid" src="./img/antenna1.png" alt="">
+            </div>
+            <div class="col-md-6">
+              <h3>The RANlytics Solution</h3>
+              <hr>
+              <p>RANlytics has introduced the Cirrus and Cirrus-LT (for Long Term) antenna monitors to augment our drive test, walk test and static RF monitoring solutions with the industry’s first and only low-cost DAS antenna monitor.
+              </p>
+              <p>A Cirrus monitor is placed in the ceiling space adjacent to each antenna.  Installation does not require skilled RF technical skills, nor even an electrician, and as Cirrus is battery-powered and fully autonomous, no cabling is necessary either.
+              </p>
+              <p>A Cirrus base station injects a signal into the DAS and each Cirrus monitor periodically ‘wakes’ to check the strength of the signal from the antenna it is monitoring, so that over time, a path loss baseline is built and anomalies & failures – including in couplers & cables – can be identified and reported. </p>
+              <p>During deployment, the project manager can continuously monitor the progress of the installation, and can immediately identify a faulty or incorrectly-installed component – before the installers leave the site. </p>
+              <p>Then, once commissioned, Cirrus provides an ongoing service assurance capability, enabling you to proactively identify, and rapidly rectify, faults. </p>
+            </div>
+          </div>
+
+
+          <hr class="my-3">
+
+          <div class="row ">
+            <div class="col-md-6">
+                <h1>Key Features</h1>
+                <p>Periodically monitor every individual DAS antenna, and verify that cables and couplers are all functioning correctly
                 </p>
-                <p>If you want to recive more information about our drive testing unit, please press the button below</p>
-                <a class="btn btn-primary" href="mailto:someone@ranlytics.com?Subject=Drive%20Testing%20on%20Ranlytics" role="button">Learn More</a>
-              </div>
-              <div class="col-md-6 mt-1 text-center">
-                <img src="./img/DriveTest.png" alt="">
-              </div>
+                <p>Real-time visibility into antenna status and performance
+                 </p>
+                 <p>Operates independently, without intervention
+                 </p>
+                 <p>Monitor passive and active DAS antennas, irrespective of antenna equipment vendor
+                 </p>
+                 <p>Baseline, and then measure path loss to every antenna, individually
+                 </p>
+                 <p>Cirrus operates autonomously and without intervention for 1 year
+                 </p>
+                 <p>Cirrus-LT operates autonomously and without intervention indefinitely
+                 </p>
+                 <p>Small, inconspicuous and autonomous
+                 </p>
+                 <p>Easy to install – no RF technician or electrician required
+                 </p>
+                 <p>Fast deployment – minutes per device</p>
             </div>
+            <div class="col-md-6">
+              <h3>Benefits for operators, network integrators, installers, municipalities and regulators</h3>
 
-            <hr class="my-3">
-
-
-            <div class="row solution ancor" id="walkTesting">
-              <div class="col-md-6">
-                <h1>Walk Testing</h1>
-                <p>Cerno by RANlytics provides your engineers & business users with a complete, integrated walk and DAS testing & reporting suite that complements our drive testing and static testing solutions. And with the unique RANlytics service subscription model, there is no IT infrastructure required, no capital outlay, no annual maintenance fees and lower OPEX costs.
-                </p>
-                <p>If you want to recive more information about our walk testing unit, please press the button below</p>
-                <a class="btn btn-primary" href="mailto:someone@ranlytics.com?Subject=Walk%20Testing%20on%20Ranlytics" role="button">Learn More</a>
-              </div>
-              <div class="col-md-6 mt-1 text-center">
-                <img src="./img/WalkTest.png" alt="">
-              </div>
+              <p>Very low cost devices – can be purchased outright, or offered on a subscription service basis</p>
+              <p>Eliminates need for walk tests to confirm successful installation of antennas</p>
+              <p>Immediately identify antenna issues & faults </p>
+              <p>Enables antenna service assurance model</p>
+              <p>Better manage SLA performance</p>
+              <p>Move from reactive to proactive management</p>
+              <p>Our intuitive and simple-to-use GUI interface lowers your training and business integration costs</p>
+              <p>Auto-notification of antenna failures via email alerts</p>
+              <p>Enables true RF service assurance models to be implemented for the first time to better manage SLA performance</p>
+              <p>Our intuitive and simple-to-use GUI interface lowers your training and business integration costs</p>
+              <p>No limits on number of users able to access the data, or on the number of concurrent users</p>
             </div>
+          </div>
 
+          <hr class="my-3">
 
-            <hr class="my-3">
-
-            <div class="row solution ancor" id="RFMonitoring">
-              <div class="col-md-6">
-                <h1>Continuous, Real-time RF Monitoring</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu</p>
-                <a class="btn btn-primary" href="mailto:someone@ranlytics.com?Subject=RF%20Monitoring%20on%20Ranlytics" role="button">Learn More</a>
-              </div>
-              <div class="col-md-6 mt-1 text-center">
-                <img src="./img/demo-map.png" alt="">
-              </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <h1>The RANlytics Advantage</h1>
+              <p>Cirrus and Cirrus-LT by RANlytics provide you with complete, continuous and near real-time visibility into the status of every element in both passive & active DAS installations, down to the individual antenna.</p>
             </div>
+          </div>
 
 
-            <hr class="my-3">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#learnMore">Learn More</button>
 
-            <div class="row solution ancor" id="antennaMonitoring">
-              <div class="col-md-6">
-                <h1>DAS Antenna Monitoring</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fu</p>
-                <a class="btn btn-primary" href="mailto:someone@ranlytics.com?Subject=Antenna%20Monitoring%20on%20Ranlytics" role="button">Learn More</a>
-              </div>
-              <div class="col-md-6 mt-1 text-center">
-                <img src="./img/demo-map.png" alt="">
+            <!-- Modal -->
+            <div class="modal fade" id="learnMore" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Learn More</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <p>If you want to learn more about our Antenna monitoring unit, please write to us, and we will email you more information</p>
+                        <p>You can email us at <a class="" href="mailto:enquiry@ranlytics.com?Subject=Antenna%Monitoring%20on%20RANlytics">Enquiry@ranlytics.com</a></p>
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
               </div>
             </div>
         </div>
@@ -207,47 +244,6 @@
         <!-- Footer -->
         <footer>
             <div class="container">
-                <!-- Social -->
-                <div class="row footerDiv text-center">
-                    <h3>Join Us</h3>
-                    <div class="sicon offset-lg-3 offset-sm-2">
-                        <div class="col-lg-1 col-sm-2 col-xs-3 offset-xs-1 text-center">
-                            <div class="icon-circle">
-                                <a href="#" class="ifacebook" title="Facebook">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-1 col-sm-2 col-xs-3 offset-xs-1 text-center">
-                            <div class="icon-circle">
-                                <a href="#" class="itwittter" title="Twitter">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- <div class="col-lg-1 col-sm-2 col-xs-3 text-center">
-                            <div class="icon-circle">
-                                <a href="#" class="igoogle" title="Google+">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                            </div>
-                        </div> -->
-
-                        <div class="col-lg-1 col-sm-2 col-xs-3 offset-xs-1 text-center">
-                            <div class="icon-circle">
-                                <a href="https://www.linkedin.com/company/ranlytics" class="iLinkedin" title="Linkedin">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <hr class="my-2">
-                <!-- Social Ends -->
-
                 <!-- News section -->
                 <!-- <div class="row footerDiv text-center">
                     <h3>News & Events</h3>
