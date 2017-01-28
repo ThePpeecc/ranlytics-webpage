@@ -10,7 +10,8 @@ html {
     font-variant: normal;
     font-weight: 400;
     line-height: 2rem; }
-  body h4,
+  body h4, body h4,
+  html h4,
   html h4 {
     font-family: 'PT Sans Narrow';
     font-size: 1.3rem;
@@ -62,6 +63,12 @@ html {
 .inFront {
   position: relative;
   z-index: 10; }
+
+.orange {
+  color: #f58634 !important; }
+
+.blue {
+  color: #005386; }
 
 #particles-js {
   position: absolute;
@@ -159,6 +166,10 @@ html {
 .text-wrapper .read-more-state:checked ~ .read-more-trigger:before {
   content: 'Show less'; }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .hidden-between-sm-lg {
+    display: none; } }
+
 .solution img {
   max-height: 300px;
   max-width: 400px; }
@@ -175,3 +186,7 @@ html {
     margin: 0 1rem; }
   .partners .important p {
     display: inline; }
+
+.profile img {
+  max-width: 200px;
+  max-height: 200px; }
