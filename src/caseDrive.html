@@ -5,10 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
         <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />
+
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
 
-        <title>RANlytics | Home</title>
+        <title>RANlytics | Walk Testing</title>
         <!-- css -->
         <link href="css/all.min.css" rel="stylesheet">
     </head>
@@ -25,39 +26,40 @@
                   <div class="collapse navbar-toggleable-sm row" id="navbarResponsive">
                       <ul class="nav navbar-nav navbar-left float-xs-right float-md-left">
                           <!-- Links -->
-                          <li class="nav-item active">
+                          <li class="nav-item">
                               <a class="nav-link" href="./index.html">Home
-                              <span class="sr-only">(current)</span>
+
                               </a>
-                          </li>
-                          <li class="nav-item nav-link hidden-md-down spacer">
-                              <p>•</p>
-                          </li>
-                          <li class="nav-item dropDown ">
-                              <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#solutionsDrop" aria-expanded="false" aria-controls="solutionsDrop">
-                                Solutions
-                              </a>
-                              <div class="collapse" id="solutionsDrop">
-                                  <a class="dropdown-item" href="./drive.html">Drive Testing</a>
-                                  <a class="dropdown-item" href="./walk.html">Walk Testing</a>
-                                  <a class="dropdown-item" href="./rfMon.html">Continuous, Real-time RF Monitoring</a>
-                                  <a class="dropdown-item" href="./antenna.html">DAS Antenna Monitoring</a>
-                              </div>
                           </li>
                           <li class="nav-item nav-link hidden-md-down spacer">
                               <p>•</p>
                           </li>
                           <li class="nav-item dropDown">
+                              <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#solutionsDrop" aria-expanded="false" aria-controls="solutionsDrop">
+                                Solutions
+                              </a>
+                              <div class="collapse" id="solutionsDrop">
+                                <a class="dropdown-item" href="./drive.html">Drive Testing</a>
+                                <a class="dropdown-item" href="./walk.html">Walk Testing</a>
+                                <a class="dropdown-item" href="./rfMon.html">Continuous, Real-time RF Monitoring</a>
+                                <a class="dropdown-item" href="./antenna.html">DAS Antenna Monitoring</a>
+                              </div>
+                          </li>
+                          <li class="nav-item nav-link hidden-md-down spacer">
+                              <p>•</p>
+                          </li>
+                          <li class="nav-item dropDown active">
                             <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#caseDrop" aria-expanded="false" aria-controls="caseDrop">
                               Use cases
+                              <span class="sr-only">(current)</span>
                             </a>
                             <div class="collapse" id="caseDrop">
-                                <a class="dropdown-item" href="./caseDrive.html">Faster, more extensive drive testing</a>
-                                <a class="dropdown-item" href="./caseMarket.html">More targeted marketing & sales campaigns</a>
-                                <a class="dropdown-item" href="./caseWalk.html">Faster, single-pass walk testing & immediate report generation</a>
-                                <a class="dropdown-item" href="./caseService.html">Continuous, real-time DAS service assurance</a>
-                                <a class="dropdown-item" href="./caseAntenna.html">DAS antenna monitoring</a>
-                                <a class="dropdown-item" href="./caseSON.html">Closing the loop on SON</a>
+                              <a class="dropdown-item" href="./caseDrive.html">Faster, more extensive drive testing</a>
+                              <a class="dropdown-item" href="./caseMarket.html">More targeted marketing & sales campaigns</a>
+                              <a class="dropdown-item" href="./caseWalk.html">Faster, single-pass walk testing & immediate report generation</a>
+                              <a class="dropdown-item" href="./caseService.html">Continuous, real-time DAS service assurance</a>
+                              <a class="dropdown-item" href="./caseAntenna.html">DAS antenna monitoring</a>
+                              <a class="dropdown-item" href="./caseSON.html">Closing the loop on SON</a>
                             </div>
                           </li>
                           <li class="nav-item nav-link hidden-md-down spacer">
@@ -108,51 +110,39 @@
       <!-- Header Ends -->
 
 
+
         <!-- Jumbotron -->
-        <div class="jumbotron jumbotron-fluid" style="background-image: url('img/intro-bg.jpg'); background-size: cover; ">
-            <div class="container inFront">
-                <img src="img/logo.png" class="rounded mx-auto d-block img-fluid hidden-xs-down" alt="..." style="max-width:40%">
-                <div class="hidden-sm-up py-3"></div>
-                <h4 class="text-xs-center">Cellular radio frequency testing, data collection and analysis. Redefined.</h4>
-                <hr class="my-2">
+        <div class="jumbotron jumbotron-fluid pt-3 px-1 minH" style="background-image: url('img/intro-bg.jpg'); background-size: cover; ">
+            <div class="container inFront mt-3 pt-3">
+              <div class="row">
+                  <h3 class="font-weight-normal">Faster, more extensive drive testing – allowing RF engineers to focus on engineering rather than testing</h3>
+                  <div class="col-md-10 col-sm-12">
+                      <h4 class="lead">Supporting improved RF planning and design by enabling RF engineers to focus on design, engineering, configuration and fault rectification instead of conducting tests and processing log file data.</h4>
+                  </div>
+              </div>
             </div>
             <div id="particles-js" class="hidden-sm-down"></div>
         </div>
 
+
         <!-- Jumbotron Ends -->
 
-        <div class="container">
 
-            <!-- Text Row -->
-            <div class="row text-center mb-1">
-                <h1 class="font-weight-normal">Our purpose, our mantra</h1>
-                <div class="col-md-8 col-sm-12 offset-md-2">
-                    <p class="lead">RANlytics exists solely to provide operators, network integrators and installers with the best possible insight into the highest quality cellular RF performance and benchmarking data
-                    </p>
-                </div>
+        <!-- Main Row -->
+        <div class="container blue">
+          <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <p>RANlytics performs pervasive and frequent drive testing of target areas, collecting the full spectrum of performance & benchmarking RF data.  Every highway, road and street in every target city, town, and rural area is fully tested.</p>
+              <p>We capture all data from layers 1, 2 & 3 direct from the chipset, post-process it, upload it into our databases and make it available to you within hours of the completion of a test.  </p>
+              <p>You access that data using the same powerful Cerno visualisation, reporting, querying and analysis tools as used when working with walk test data.</p>
+              <p>Using a standard map interface, you can see selected RF metrics and data at a macro level, and then zoom down to see how your networks and those of your competitors are performing at a specific address.  </p>
+              <p>Better understand the effects of network changes by easily analysing how selected RF metrics have changed over time.</p>
+              <p>Cerno analytics can auto-identify anomalies and potential issues and flag them to your OSS or to you, or automatically raise tickets in your ticketing system.</p>
             </div>
-
-            <hr class="my-3">
-
-            <div class="row mb-3">
-                <div class="offset-md-1 col-md-10 col-sm-12 text-center mb-1">
-                    <h2>Legacy RF testing tools no longer meet operators’ needs</h2>
-                </div>
-
-                <div class="offset-md-1 col-md-10 col-sm-12">
-                  <p>For too long, the many issues imposed by expensive legacy RF test tools have constrained your ability to test as extensively and frequently as you need, and to maximise the business value you can extract from your test data.
-                  </p>
-                  <p>RANlytics has spent 6 years re-thinking every aspect of indoor and outdoor RF testing and test data use, and developing an integrated portfolio of solutions that addresses each and every one of the issues you face in using legacy tools, and eliminates all of the constraints they impose on you.
-                  </p>
-                  <p>Our radically new approach combines our own purpose-designed and built test hardware with highly innovative cloud-based post-processing, data visualisation, reporting and analysis tools to give your entire business actionable insight into RF performance and benchmark test data.
-                  </p>
-                  <p>We eliminate scaling problems so that you can now test as extensively and frequently as you like. Just in time for small cell and 5G deployments.</p>
-                  <hr>
-                  <p class="lead">All at a much lower cost that eliminates your CAPEX and lowers your OPEX through our unique subscription-based service model</p>
-                </div>
-            </div>
-            <!-- Text Row End -->
+          </div>
         </div>
+        <!-- Main Row End -->
+
 
         <!-- Bottom Shadow -->
         <div class="bottomShadow">
@@ -214,6 +204,7 @@
                 <hr class="my-2">-->
 
                 <!-- News section Ends -->
+
                 <div class="row footerDiv">
                     <div class="col-xs-12 text-center">
                         <p>© 2017 RANlytics. All rights reserved.</p>
@@ -222,6 +213,7 @@
             </div>
         </footer>
         <!-- Footer Ends -->
+
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
         <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
