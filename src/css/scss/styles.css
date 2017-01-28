@@ -4,7 +4,7 @@ html {
   overflow-x: hidden; }
   body p,
   html p {
-    font-family: 'PT Sans Narrow';
+    font-family: 'PT Sans Narrow', sans-serif;
     font-size: 1.2rem;
     font-style: normal;
     font-variant: normal;
@@ -13,7 +13,7 @@ html {
   body h4, body h4,
   html h4,
   html h4 {
-    font-family: 'PT Sans Narrow';
+    font-family: 'PT Sans Narrow', sans-serif;
     font-size: 1.3rem;
     font-style: normal;
     font-variant: normal;
@@ -23,7 +23,7 @@ html {
   body h2,
   html h1,
   html h2 {
-    font-family: 'PT Sans Narrow';
+    font-family: 'PT Sans Narrow', sans-serif;
     font-size: 2.4rem;
     font-style: normal;
     font-variant: normal;
@@ -31,7 +31,7 @@ html {
     line-height: 3rem; }
   body h3,
   html h3 {
-    font-family: 'PT Sans Narrow';
+    font-family: 'PT Sans Narrow', sans-serif;
     font-size: 1.8rem;
     font-style: normal;
     font-variant: normal;
